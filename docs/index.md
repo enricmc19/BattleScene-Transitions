@@ -61,7 +61,7 @@ Music gets higher volume, it's in someway a kind off like hearing somebody say "
 
 The point here is to set a mood for that moment and then calm so we make the stress go up, fight, defeat and when defeated the enemy calm down the action.
 
-Practical exaamples of this kind of transitions are The Batman Arkham Trilogy, The Assassin's Creed saga, God of War, Prince of Persia, Call of Duty campaigns, The Division, Mad Max, Nier Automata, and a lot more...
+Practical exaamples of this kind of transitions are The Batman Arkham Trilogy, The Assassin's Creed saga, God of War on PS4, Prince of Persia, Call of Duty campaigns, The Division, Mad Max, Nier Automata, and a lot more...
 
 ## Transition Examples
 
@@ -75,6 +75,12 @@ Practical exaamples of this kind of transitions are The Batman Arkham Trilogy, T
 
 [Assassin's Creed Unity](https://www.youtube.com/watch?v=WGRSIIrPISE)
 
+[Pokemon Battle Transition Evolution](https://www.youtube.com/watch?v=FM--loS9hIk)
+
+[Pokemon Sapphire](https://www.youtube.com/watch?v=z-ktLPl9aRg&t=6609s)
+
+[Mad Max](https://www.youtube.com/watch?v=E5lDmbqMqvo)
+
 ## Conclusions
 
 During my research I found different forms of making transitions, either in films or videogames and found reddit discussions about how to make transitions or what's the most used or seen in both arts. And most of the people agree that it isn't needed a great effort on it, it's just a bunch of seconds for taking the player/spectator from point A to B or viceversa. So doesn't matter how simple or complicated while it makes the transition smooth without converting the transition itself into an entire videoclip, making the player loose the focus.
@@ -83,6 +89,6 @@ In brief words: Try to make it easy, keep it smooth, but remember sky is the lim
 
 ## Documentation
 
-[Transition Examples](http://www.davetech.co.uk/screentransitions)
+[Transition Guidelines Examples](http://www.davetech.co.uk/screentransitions)
 
 [Transitions Discussion Reddit](https://www.reddit.com/r/letsplay/comments/3y8w1y/lets_talk_transitions/)
