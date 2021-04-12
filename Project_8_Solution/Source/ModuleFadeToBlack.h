@@ -29,7 +29,7 @@ public:
 	// Called from another module
 	// Starts the fade process which has two steps, fade_out and fade_in
 	// After the first step, the modules should be switched
-	bool FadeToBlack(Module* toDisable, Module* toEnable, float frames = 120);
+	bool FadeToBlack(Module* toDisable, Module* toEnable, float frames = 90);
     int animID = 0;
 private:
 
@@ -51,7 +51,8 @@ private:
 	SDL_Rect transit2;
 	SDL_Rect transit3;
 	SDL_Rect transit4;
-	SDL_Rect transit5;
+	SDL_Rect transit5{-SCREEN_WIDTH};
+	SDL_Rect transit6{2*SCREEN_WIDTH};
 	
 
 	// The modules that should be switched after the first step

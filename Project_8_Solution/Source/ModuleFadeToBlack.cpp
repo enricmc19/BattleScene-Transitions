@@ -42,7 +42,7 @@ Update_Status ModuleFadeToBlack::Update()
 			// TODO 1: Enable / disable the modules received when FadeToBlacks() gets called
 			moduleToDisable->Disable();
 			moduleToEnable->Enable();
-			animID++;
+			
 
 			currentStep = Fade_Step::FROM_BLACK;
 		}
@@ -52,6 +52,11 @@ Update_Status ModuleFadeToBlack::Update()
 		--framesCounter;
 		if (framesCounter <= 0)
 		{
+			animID++;
+			if (animID > 3) 
+			{
+				animID = 0;
+			}
 			currentStep = Fade_Step::NONE;
 		}
 	}
@@ -65,7 +70,27 @@ Update_Status ModuleFadeToBlack::PostUpdate()
 	if (currentStep == Fade_Step::NONE) 
 	return Update_Status::UPDATE_CONTINUE;
 	
-	switch (animID)
+	if(animID==0)
+	{
+		transition1();
+	}
+	else if (animID == 1) 
+	{
+		transition2();
+	}
+	else if (animID == 2) 
+	{
+		transition3();
+	}
+	else if (animID == 3) 
+	{
+		transition4();
+	}
+	else if (animID > 3) 
+	{
+		animID == 0;
+	}
+	/*switch (animID)
 	{
 	case 0:
 		transition1();
@@ -76,7 +101,10 @@ Update_Status ModuleFadeToBlack::PostUpdate()
 	case 2:
 		transition3();
 		break;
-	};
+	case 3:
+		transition4();
+		break;
+	};*/
 
 	//float fadeRatio = (float)framesCounter / (float)maxFadeFrames;
 
@@ -162,5 +190,20 @@ void ModuleFadeToBlack::transition3()
 
 void ModuleFadeToBlack::transition4()
 {
+	SDL_SetRenderDrawColor(App->render->renderer, 255, 0, 0, 255);
+	SDL_RenderFillRect(App->render->renderer, &transit5);
+	SDL_SetRenderDrawColor(App->render->renderer, 255, 0, 0, 255);
+	SDL_RenderFillRect(App->render->renderer, &transit6);
+
+	transit5.h = SCREEN_HEIGHT / 2 * SCREEN_SIZE;
+	transit5.w = SCREEN_WIDTH * SCREEN_SIZE;
+	transit5.x += 0.25 * SCREEN_SIZE;
+	transit5.y = 0 * SCREEN_SIZE;	
+
+
+	transit6.h = SCREEN_HEIGHT / 2 * SCREEN_SIZE;
+	transit6.w = SCREEN_WIDTH * SCREEN_SIZE;
+	transit6.x -= 0.25 * SCREEN_SIZE;
+	transit6.y = SCREEN_HEIGHT/2 * SCREEN_SIZE;
 	
 }
