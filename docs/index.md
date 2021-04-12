@@ -110,6 +110,10 @@ Practical exaamples of this kind of transitions are The Batman Arkham Trilogy, T
 
 [Prince of Persia: Two Thrones](https://www.youtube.com/watch?v=Yg0WVESEn6I)
 
+[Batman Arkham Asylum](https://www.youtube.com/watch?v=yj4Qw6PMlvk)
+
+[Assassin's Creed Unity](https://www.youtube.com/watch?v=WGRSIIrPISE)
+
 ## Conclusions
 
 During my research I found different forms of making transitions, either in films or videogames and found reddit discussions about how to make transitions or what's the most used or seen in both arts. And most of the people agree that it isn't needed a great effort on it, it's just a bunch of seconds for taking the player/spectator from point A to B or viceversa. So doesn't matter how simple or complicated while it makes the transition smooth without converting the transition itself into an entire videoclip, making the player loose the focus.
