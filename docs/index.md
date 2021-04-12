@@ -47,7 +47,7 @@ Combat scene transitions are scene transitions from a segment of the gameplay or
 
 ## How does a battle-transition work? A theorical explanation
 
-Scene transitions work essentially as a distraction effect and a speed bump or slower. 
+Scene transitions work essentially as a distraction effect and a speed bump or slow pacer. 
 
 They are a time management tool in the same way as loading screens, although there is usually not much to do on a loading screen in an interactive way, at least until recent games from 2006 to nowadays interactive loading screens didn't have an extensive use. The difference between a transition is obviously the duration time, a super-extensive world that requires a certain power and load is camouflaged with a loading screen, while a simple pass to a different plant of a building in a top-down RPG from the 90's has not a huge load problem, so Screen Transitions are even used to set you into those long and boring loading screens with an animated bar and the charge percent which sometime add some images, lore from the game or brief tutorials that sometimes you never manage to read because loading time got faster than your reading time so you don't learn a game mechanic, at least not from that screen.
 
@@ -63,7 +63,7 @@ Scene transitions can have a huge variability depending on the creativity and ef
 
 I've looked for different styles of battle-transitions in videogames and I made a brief classification of two big groups of battle-transitions which I have called as it follows:
 
-### The theatrical transition process but think like it's a game
+### The theatrical transition process
 
 So if a theatrical play has a stage with courtains, actors, background and some atrezzo.
 In videogames we have: The scene itself, the actors are the player and tother characters in the world, and the background and atrezzo is set by the scene.
