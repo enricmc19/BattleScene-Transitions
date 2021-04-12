@@ -49,7 +49,7 @@ Combat scene transitions are scene transitions from a segment of the gameplay or
 
 Scene transitions work essentially as a distraction effect and a speed bump or slow pacer. 
 
-They are a time management tool in the same way as loading screens, although there is usually not much to do on a loading screen in an interactive way, at least until recent games from 2006 to nowadays interactive loading screens didn't have an extensive use. The difference between a transition is obviously the duration time, a super-extensive world that requires a certain power and load is camouflaged with a loading screen, while a simple pass to a different plant of a building in a top-down RPG from the 90's has not a huge load problem, so Screen Transitions are even used to set you into those long and boring loading screens with an animated bar and the charge percent which sometime add some images, lore from the game or brief tutorials that sometimes you never manage to read because loading time got faster than your reading time so you don't learn a game mechanic, at least not from that screen.
+They are a time management tool in the same way as loading screens, although there is usually not much to do on a loading screen in an interactive way, at least until recent games from nowadays interactive loading screens didn't have an extensive use. The difference between a transition is obviously the duration time, a super-extensive world that requires a certain power and load is camouflaged with a loading screen, while a simple pass to a different plant of a building in a top-down RPG from the 90's has not a huge load problem, so Screen Transitions are even used to set you into those long and boring loading screens with an animated bar and the charge percent which sometime add some images, lore from the game or brief tutorials that sometimes you never manage to read because loading time got faster than your reading time so you don't learn a game mechanic, at least not from that screen.
 
 Scene Trransitions are usually short, but they are indicators that something different is starting, but in an environment which does not have to be much different from the one you are currently seeing. They are a step from one scene to another, which must leave the previous scene frozen and depending on what happens in the new scene, in this case the Battle-Scene, modify certain parameters of the previous scene in order to maintain consistency between what happens in one scene and the other.
 
@@ -87,11 +87,30 @@ This action chain tends to happen in every scene transition, but only if you are
 
 For example we see this kind of transition in games like Final Fantasy, Pokemon or Octopath Traveller
 
+They can use a high variability of transitions, from fade to black, or playing with the position of the hud menu
+
 
 ### HUD and Animations-centered transitions
 
 This type of animation tends to be present in videogames where the direct action is a key factor of the game formula. In this case there's not usually a battle-scene, but a battle-state for the player itself. So we see that transition not properly in a screen effect, so we see the transition in the protagonist and the visual environment of the scene.
 
-This kind of transitions happen when the player accesses a zone with enemies, changing the player state, because the combat system is integrated in the same scene
+This kind of transitions happen when the player accesses a zone with enemies, changing the player state, because the combat system is integrated in the same scene.
+
+Music gets higher volume, it's in someway a kind off like hearing somebody say "Let the games begin" like in some kind of Smack Down Event or a show similar to that.
+
+The point here is to set a mood for that moment and then calm so we make the stress go up, fight, defeat and when defeated the enemy calm down the action.
 
 Practical exaamples of this kind of transitions are The Batman Arkham Trilogy, The Assassin's Creed saga, God of War, Prince of Persia, Call of Duty campaigns, The Division, Mad Max, Nier Automata, and a lot more...
+
+
+## Conclusions
+
+During my research I found different forms of making transitions, either in films or videogames and found reddit discussions about how to make transitions or what's the most used or seen in both arts. And most of the people agree that it isn't needed a great effort on it, it's just a bunch of seconds for taking the player/spectator from point A to B or viceversa. So doesn't matter how simple or complicated while it makes the transition smooth without converting the transition itself into an entire videoclip, making the player loose the focus.
+
+In brief words: Try to make it easy, keep it smooth, but remember sky is the limit, so at least make transitions according to what you're going to explain and if you want to make it a big bigger give it a try.
+
+## Documentation
+
+[Transition Examples](http://www.davetech.co.uk/screentransitions)
+
+[Transitions Discussion Reddit](https://www.reddit.com/r/letsplay/comments/3y8w1y/lets_talk_transitions/)
