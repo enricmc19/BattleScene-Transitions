@@ -104,7 +104,7 @@ Practical exaamples of this kind of transitions are The Batman Arkham Trilogy, T
 
 ## Transition Examples
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/kCtt-gomGE4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+[Octopath Traveller](https://www.youtube.com/watch?v=kCtt-gomGE4)
 
 ## Conclusions
 
