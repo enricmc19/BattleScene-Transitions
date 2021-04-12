@@ -78,12 +78,14 @@ In videogames we don't have courtains, so we create them with geometric forms, a
 - Old scene (Gameplay/navigation in this case)
 - Trigger (Something happens and activates the transition
 - Pausing the action (Freeze previous scene)
-- Easy in (Courtains
+- Easy in (Courtains go to the center till we see no stage)
 - Total blackness
-- Easy out
+- Easy out (Courtains return to a position wich let's us see the next scene)
 - New Scene (Battle scene in this case)
 
 This action chain tends to happen in every scene transition, but only if you are really changing from an scene, to another.
+
+For example we see this kind of transition in games like Final Fantasy, Pokemon or Octopath Traveller
 
 
 ### HUD and Animations-centered transitions
