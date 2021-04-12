@@ -102,6 +102,8 @@ The point here is to set a mood for that moment and then calm so we make the str
 
 Practical exaamples of this kind of transitions are The Batman Arkham Trilogy, The Assassin's Creed saga, God of War, Prince of Persia, Call of Duty campaigns, The Division, Mad Max, Nier Automata, and a lot more...
 
+<iframe width="560" height="315" src="https://www.youtube.com/watch?v=kCtt-gomGE4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 
 ## Conclusions
 
