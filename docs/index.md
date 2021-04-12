@@ -104,7 +104,12 @@ Practical exaamples of this kind of transitions are The Batman Arkham Trilogy, T
 
 ## Transition Examples
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/watch?v=kCtt-gomGE4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe src="https://www.youtube.com//embedwatch?v=_zrvEmP41-s}}" 
+    width="560" 
+    height="315"
+    frameborder="0" 
+    allowfullscreen>
+</iframe>
 
 ## Conclusions
 
