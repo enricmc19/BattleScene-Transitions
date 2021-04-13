@@ -6,7 +6,7 @@ Transitions to BattleScene Research
 Transitions to BattleScene Research
 
 
-Hello, my name is Enric Morales. I'm a student from the CITM (Image and Multimedia Technology Centre) of the UPC in Terrassa, and this is my own personal research under acknowledgement from my teacher [Ramon Santamaría](https://github.com/raysan5).
+Hello, my name is Enric Morales. I'm a student from the CITM (Image and Multimedia Technology Centre) of the UPC in Terrassa, and this is my own personal research under acknowledgement from my teacher [Ramón Santamaría](https://github.com/raysan5).
 
 ## What is a Battle-Transition?
 
