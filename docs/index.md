@@ -91,6 +91,10 @@ During my research I found different forms of making transitions, either in film
 
 In brief words: Try to make it easy, keep it smooth, but remember sky is the limit, so at least make transitions according to what you're going to explain and if you want to make it a big bigger give it a try.
 
+## Code
+ ![Image](/Assets/Captura.jpg) 
+ 
+
 ## Documentation
 
 [Transition Guidelines Examples](http://www.davetech.co.uk/screentransitions)
