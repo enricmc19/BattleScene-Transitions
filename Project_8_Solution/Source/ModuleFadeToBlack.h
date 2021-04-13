@@ -45,7 +45,7 @@ private:
 	Uint32 maxFadeFrames = 0;
 	
 
-	// The rectangle of the screen, used to render the black rectangle
+	// The rectangles of the screen, used to render the animation
 	SDL_Rect screenRect;
 	SDL_Rect transit1;
 	SDL_Rect transit2;
