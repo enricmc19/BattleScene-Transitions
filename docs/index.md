@@ -104,6 +104,31 @@ These are the libraries included in teh ModuleFadeToBlack.cpp
 
 #include "SDL/include/SDL_render.h"
  ```
+ 
+ All the next lines work because of the existence of the FadeToBlack function, which sets the modules that have to be enabled or disabled and set the transition frame value
+ 
+ ```
+ bool ModuleFadeToBlack::FadeToBlack(Module* moduleToDisable, Module* moduleToEnable, float frames)
+{
+	bool ret = false;
+
+	// If we are already in a fade process, ignore this call
+	if(currentStep == Fade_Step::NONE)
+	{
+		currentStep = Fade_Step::TO_BLACK;
+		framesCounter = 0;
+		maxFadeFrames = frames;
+
+		// We need to keep track of the modules received in FadeToBlack(...)
+		this->moduleToDisable = moduleToDisable;
+		this->moduleToEnable = moduleToEnable;
+
+		ret = true;
+	}
+
+	return ret;
+}
+```
  The update process consists in stablish if a fade it's going to happen with the Fade_Steps, so if Fade_Step is ```TO_BLACK``` we disable the actual scene and enable the next one, so the Post Update can draw the transition. The variable animID is changed in order to never get a value over the number of transitions we have and play them correctly.
  ```
  Update_Status ModuleFadeToBlack::Update()
