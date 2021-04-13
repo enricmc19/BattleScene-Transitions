@@ -198,11 +198,11 @@ void ModuleFadeToBlack::transition4() //Trying to make two rectangles move to sc
 	SDL_RenderFillRect(App->render->renderer, &transit6);
 
 	transit5.h = SCREEN_HEIGHT / 2 * SCREEN_SIZE;
-	//transit5.w = SCREEN_WIDTH * SCREEN_SIZE;
+	transit5.w= EaseLinearInOut(framesCounter, 0, SCREEN_WIDTH*SCREEN_SIZE, 45);
 	transit5.x = 0 * SCREEN_SIZE;
 	transit5.y = 0 * SCREEN_SIZE;	
 
-	transit5.w= EaseLinearInOut(framesCounter, 0, SCREEN_WIDTH*SCREEN_SIZE, 45);
+	
 
 	transit6.h = SCREEN_HEIGHT / 2 * SCREEN_SIZE;
 	transit6.w = EaseLinearOut(framesCounter, SCREEN_WIDTH*SCREEN_SIZE, -SCREEN_WIDTH * SCREEN_SIZE, 45);
