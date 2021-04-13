@@ -24,51 +24,6 @@ So if you go to the battle screen, because you found a Pokemon, once you defeat 
 
 As a videogame development student, I thought the best way to attack the process of creating a transition manager or scene manager is literally thinking about how transitions worked in theatres. Transitions in videogames can be explained as the same way in theatrical arts, because they tend to work in the same way.
 
-## How does a battle-transition work? A practical explanation
-
-Scene transitions can have a huge variability depending on the creativity and effort we put on them. Devs usually play with geometrical forms and it's colors, disposition, tone, brightness and movement.
-
-I've looked for different styles of battle-transitions in videogames and I made a brief classification of two big groups of battle-transitions which I have called as it follows:
-
-### The theatrical transition process
-
-So if a theatrical play has a stage with courtains, actors, background and some atrezzo.
-In videogames we have: The scene itself, the actors are the player and tother characters in the world, and the background and atrezzo is set by the scene.
-
-In a theatrical play a transition usually is made at the end of a scene, because their changes are guided by narrative.
-In videogames transitions can be triggered by different factors such as entering to a building from outside, encountering a strange creature can cause a transition, grabbing an item can activate a transition, so we have even more possibilities.
-
-In a theatrical play, courtains are attached to the stage, so when they close, they are pointing to the idea that when those courtains open up again, what you'll see, will be different to the previous scene.
-
-In videogames we don't have courtains, so we create them with geometric forms, animations or textures and activate them. When a trigger is activated a chained screen states which follows the next order:
-
-- Old scene (Gameplay/navigation in this case)
-- Trigger (Something happens and activates the transition)
-- Pausing the action (Freeze previous scene)
-- Easy in (Courtains go to the center till we see no stage)
-- Total blackness
-- Easy out (Courtains return to a position wich let's us see the next scene)
-- New Scene (Battle scene in this case)
-
-This action chain tends to happen in every scene transition, but only if you are really changing from an scene, to another.
-
-For example we see this kind of transition in games like Final Fantasy, Pokemon or Octopath Traveller
-
-They can use a high variability of transitions, from fade to black, or playing with the position of the hud menu
-
-
-### Player state transitions
-
-This type of animation tends to be present in videogames where the direct interaction is a key factor of the game formula. In this case there's not usually a battle-scene, but a battle-state for the player itself. So we see that transition not properly in a screen effect, so we see the transition in the protagonist and the visual environment of the scene.
-
-This kind of transitions happen when the player accesses a zone with enemies, changing the player state, because the combat system is integrated in the same scene.
-
-Music gets higher volume, it's in someway a kind off like hearing somebody say "Let the games begin" like in some kind of Smack Down Event or a show similar to that.
-
-The point here is to set a mood for that moment and then calm so we make the stress go up, fight, defeat and when defeated the enemy calm down the action.
-
-Practical examples of this kind of transitions are The Batman Arkham Trilogy, The Assassin's Creed saga, God of War on PS4, Prince of Persia, Call of Duty campaigns, The Division, Mad Max, Nier Automata, and a lot more...
-
 ## Transition Examples
 
 [Octopath Traveller](https://www.youtube.com/watch?v=kCtt-gomGE4)
