@@ -12,7 +12,7 @@ Scene transitions work essentially as a distraction effect and a speed bump or s
 
 They are a time management tool in the same way as loading screens, although there is usually not much to do on a loading screen in an interactive way, at least until recent games from nowadays interactive loading screens didn't have an extensive use. The difference between a transition is obviously the duration time, a super-extensive world that requires a certain power and load is camouflaged with a loading screen, while a simple pass to a different plant of a building in a top-down RPG from the 90's has not a huge load problem, so Screen Transitions are even used to set you into those long and boring loading screens with an animated bar and the charge percent which sometime add some images, lore from the game or brief tutorials that sometimes you never manage to read because loading time got faster than your reading time so you don't learn a game mechanic, at least not from that screen.
 
-Scene Trransitions are usually short, but they are indicators that something different is starting, but in an environment which does not have to be much different from the one you are currently seeing. They are a step from one scene to another, which must leave the previous scene frozen and depending on what happens in the new scene, in this case the Battle-Scene, modify certain parameters of the previous scene in order to maintain consistency between what happens in one scene and the other.
+Scene Transitions are usually short, but they are indicators that something different is starting, but in an environment which does not have to be much different from the one you are currently seeing. They are a step from one scene to another, which must leave the previous scene frozen and depending on what happens in the new scene, in this case the Battle-Scene, modify certain parameters of the previous scene in order to maintain consistency between what happens in one scene and the other.
 
 So if you go to the battle screen, because you found a Pokemon, once you defeat or capture that Pokemon, once you get back to the gameplay or navigation screen in Pokemon's case, that creature, can't be there in that zone because in the battle-scene you decided what happenned to that creature in the game world itself.
 
@@ -37,7 +37,7 @@ In a theatrical play, courtains are attached to the stage, so when they close, t
 In videogames we don't have courtains, so we create them with geometric forms, animations or textures and activate them. When a trigger is activated a chained screen states which follows the next order:
 
 - Old scene (Gameplay/navigation in this case)
-- Trigger (Something happens and activates the transition
+- Trigger (Something happens and activates the transition)
 - Pausing the action (Freeze previous scene)
 - Easy in (Courtains go to the center till we see no stage)
 - Total blackness
@@ -51,9 +51,9 @@ For example we see this kind of transition in games like Final Fantasy, Pokemon 
 They can use a high variability of transitions, from fade to black, or playing with the position of the hud menu
 
 
-### HUD and Animations-centered transitions
+### Player state transitions
 
-This type of animation tends to be present in videogames where the direct action is a key factor of the game formula. In this case there's not usually a battle-scene, but a battle-state for the player itself. So we see that transition not properly in a screen effect, so we see the transition in the protagonist and the visual environment of the scene.
+This type of animation tends to be present in videogames where the direct interaction is a key factor of the game formula. In this case there's not usually a battle-scene, but a battle-state for the player itself. So we see that transition not properly in a screen effect, so we see the transition in the protagonist and the visual environment of the scene.
 
 This kind of transitions happen when the player accesses a zone with enemies, changing the player state, because the combat system is integrated in the same scene.
 
@@ -61,7 +61,7 @@ Music gets higher volume, it's in someway a kind off like hearing somebody say "
 
 The point here is to set a mood for that moment and then calm so we make the stress go up, fight, defeat and when defeated the enemy calm down the action.
 
-Practical exaamples of this kind of transitions are The Batman Arkham Trilogy, The Assassin's Creed saga, God of War on PS4, Prince of Persia, Call of Duty campaigns, The Division, Mad Max, Nier Automata, and a lot more...
+Practical examples of this kind of transitions are The Batman Arkham Trilogy, The Assassin's Creed saga, God of War on PS4, Prince of Persia, Call of Duty campaigns, The Division, Mad Max, Nier Automata, and a lot more...
 
 ## Transition Examples
 
