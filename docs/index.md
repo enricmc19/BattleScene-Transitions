@@ -92,9 +92,161 @@ During my research I found different forms of making transitions, either in film
 In brief words: Try to make it easy, keep it smooth, but remember sky is the limit, so at least make transitions according to what you're going to explain and if you want to make it a big bigger give it a try.
 
 ## Code
- ![Image](/Assets/Captura.jpg) 
- 
 
+These are the libraries included in teh ModuleFadeToBlack.cpp
+ ```
+ #include "ModuleFadeToBlack.h"
+
+#include "Application.h"
+#include "ModuleRender.h"
+#include "easings.h"
+#include "ModuleRender.h"
+
+#include "SDL/include/SDL_render.h"
+ ```
+ The update process consists in stablish if a fade it's going to happen with the Fade_Steps, so if Fade_Step is ```TO_BLACK``` we disable the actual scene and enable the next one, so the Post Update can draw the transition. The variable animID is changed in order to never get a value over the number of transitions we have and play them correctly.
+ ```
+ Update_Status ModuleFadeToBlack::Update()
+{
+	// Exit this function if we are not performing a fade
+	if (currentStep == Fade_Step::NONE) return Update_Status::UPDATE_CONTINUE;
+
+	if (currentStep == Fade_Step::TO_BLACK)
+	{
+		++framesCounter;
+		if (framesCounter >= maxFadeFrames)
+		{
+			
+			moduleToDisable->Disable();
+			moduleToEnable->Enable();
+			
+
+			currentStep = Fade_Step::FROM_BLACK;
+		}
+	}
+	else
+	{
+		--framesCounter;
+		if (framesCounter <= 0)
+		{
+			animID++;
+			if (animID > 3) 
+			{
+				animID = 0;
+			}
+			currentStep = Fade_Step::NONE;
+		}
+	}
+
+	return Update_Status::UPDATE_CONTINUE;
+}
+````
+The post update calls our self made transition functions depending on the animID value
+
+```
+Update_Status ModuleFadeToBlack::PostUpdate()
+{
+	// Exit this function if we are not performing a fade
+	if (currentStep == Fade_Step::NONE) 
+	return Update_Status::UPDATE_CONTINUE;
+	
+	if(animID==0)
+	{
+		transition1();
+	}
+	else if (animID == 1) 
+	{
+		transition2();
+	}
+	else if (animID == 2) 
+	{
+		transition3();
+	}
+	else if (animID == 3) 
+	{
+		transition4();
+	}
+	else if (animID > 3) 
+	{
+		animID == 0;
+	}
+	
+	return Update_Status::UPDATE_CONTINUE;
+ ```
+
+And these are the transition functions made with easings and a fade to black
+
+```
+void ModuleFadeToBlack::transition1() //Left upper edge of the screen square covers all the screen and goes backwards
+{
+	SDL_SetRenderDrawColor(App->render->renderer, 255, 0, 0, 255);
+	SDL_RenderFillRect(App->render->renderer, &transit1);
+    transit1.x = 0;
+	transit1.y = 0;
+	transit1.h = EaseBounceInOut(framesCounter,SCREEN_HEIGHT/8, SCREEN_HEIGHT, 45);
+	transit1.w = EaseBounceInOut(framesCounter, SCREEN_WIDTH/8, SCREEN_WIDTH, 45);
+		
+}
+
+void ModuleFadeToBlack::transition2() // Fade to black
+{
+	float fadeRatio = (float)framesCounter / (float)maxFadeFrames;
+	SDL_SetRenderDrawColor(App->render->renderer, 255, 0, 0, (Uint8)(fadeRatio * 255.0f));
+	SDL_RenderFillRect(App->render->renderer, &screenRect);
+}
+
+void ModuleFadeToBlack::transition3() // All four edges merge overlapping the screen
+{
+	SDL_SetRenderDrawColor(App->render->renderer, 255, 0, 0, 255);
+	SDL_RenderFillRect(App->render->renderer, &transit1);
+	SDL_SetRenderDrawColor(App->render->renderer, 255, 0, 0, 255);
+	SDL_RenderFillRect(App->render->renderer, &transit2);
+	SDL_SetRenderDrawColor(App->render->renderer, 255, 0, 0, 255);
+	SDL_RenderFillRect(App->render->renderer, &transit3);
+	SDL_SetRenderDrawColor(App->render->renderer, 255, 0, 0, 255);
+	SDL_RenderFillRect(App->render->renderer, &transit4);
+
+    transit1.x = 0;
+	transit1.y = 0;
+	transit1.h = EaseBounceInOut(framesCounter, SCREEN_HEIGHT/8, SCREEN_HEIGHT, 45);
+	transit1.w = EaseBounceInOut(framesCounter, SCREEN_WIDTH/8, SCREEN_WIDTH, 45);
+	
+    transit2.x = 384 * SCREEN_SIZE;
+	transit2.y = 240 * SCREEN_SIZE;
+	transit2.h = EaseBounceInOut(framesCounter, SCREEN_HEIGHT/8, -SCREEN_HEIGHT, 45);
+	transit2.w = EaseBounceInOut(framesCounter, SCREEN_WIDTH/8, -SCREEN_WIDTH, 45);
+	
+    transit3.x = 0 * SCREEN_SIZE;
+	transit3.y = 240 * SCREEN_SIZE;
+	transit3.h = EaseBounceInOut(framesCounter, SCREEN_HEIGHT/8, -SCREEN_HEIGHT, 45);
+	transit3.w = EaseBounceInOut(framesCounter, -SCREEN_WIDTH/8 , SCREEN_WIDTH, 45);
+	
+    transit4.x = 384 * SCREEN_SIZE;
+	transit4.y = 0 * SCREEN_SIZE;
+	transit4.h = EaseBounceInOut(framesCounter, -SCREEN_HEIGHT/8, SCREEN_HEIGHT, 45);
+	transit4.w = EaseBounceInOut(framesCounter, SCREEN_WIDTH/8, -SCREEN_WIDTH, 45);
+	
+}
+
+void ModuleFadeToBlack::transition4() //Trying to make two rectangles move to screen centre and get back
+{
+	SDL_SetRenderDrawColor(App->render->renderer, 255, 0, 0, 255);
+	SDL_RenderFillRect(App->render->renderer, &transit5);
+	SDL_SetRenderDrawColor(App->render->renderer, 255, 0, 0, 255);
+	SDL_RenderFillRect(App->render->renderer, &transit6);
+
+	transit5.h = SCREEN_HEIGHT / 2 * SCREEN_SIZE;
+	transit5.w= EaseLinearInOut(framesCounter, 0, SCREEN_WIDTH*SCREEN_SIZE, 45);
+	transit5.x = 0 * SCREEN_SIZE;
+	transit5.y = 0 * SCREEN_SIZE;		
+
+	transit6.h = SCREEN_HEIGHT / 2 * SCREEN_SIZE;
+	transit6.w = EaseLinearOut(framesCounter, SCREEN_WIDTH*SCREEN_SIZE, -SCREEN_WIDTH * SCREEN_SIZE, 45);
+	transit6.x = SCREEN_WIDTH * SCREEN_SIZE;
+	transit6.y = SCREEN_HEIGHT/2 * SCREEN_SIZE;
+	
+}
+```
 ## Documentation
 
 [Transition Guidelines Examples](http://www.davetech.co.uk/screentransitions)
